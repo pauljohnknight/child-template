@@ -1,0 +1,40 @@
+/*
+
+Theme Name: Child of Divi
+Description: child theme of
+Author: Paul Knight
+Version: 0.0.1
+Template: Divi
+
+*/
+
+@import url('../Divi/style.css');
+
+/*site resets*/
+.main_title {display: none;}
+
+h1, h2, h3, p, a {} /* add font family*/
+
+
+/*main-header*/
+#main-header {} /*background color*/
+#top-menu a {} /*menu item color*/
+#top-menu li.current-menu-item > a {} /*active menu color*/
+
+#main-header {box-shadow: none;}
+
+@media only screen and (min-width: 981px) {
+#main-header.et-fixed-header {
+box-shadow: none !important;}
+}
+
+/****** THIS GETS RID OF THE WEIRD EXTRA MARGIN THAT IS ADDED TO COLUMNS ON MOBILE DEVICES
+        if you have two columns on a single row you need to add this back in to the CSS for the column, and
+        change 0px back to 30px
+******/
+@media (max-width: 980px){
+.et_pb_column {
+margin-bottom: 0px;}
+}
+
+/****** END OF RESETS ******/
