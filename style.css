@@ -1,14 +1,10 @@
 /*
-
 Theme Name: Child of Divi
 Description: child theme of
 Author: Paul Knight
 Version: 0.0.1
 Template: Divi
-
 */
-
-@import url('../Divi/style.css');
 
 /*site resets*/
 .main_title {display: none;}
